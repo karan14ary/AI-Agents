@@ -6,8 +6,8 @@ import numpy as np
 from langchain_ollama import OllamaLLM
 from langchain_huggingface import HuggingFaceEmbeddings  # Updated Import
 from langchain_community.vectorstores import FAISS
-from langchain.text_splitter import CharacterTextSplitter
-from langchain.schema import Document
+from langchain_text_splitters import CharacterTextSplitter
+from langchain_core.messages import SystemMessage, HumanMessage
 
 # Load AI Model
 llm = OllamaLLM(model="mistral")  # Change to "llama3" or another Ollama model
